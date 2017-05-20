@@ -1,0 +1,24 @@
+package week11;
+
+import java.io.*;
+
+public class question1 {
+	
+	public static void main(String[] args) throws IOException {
+//		int theValue = 30;
+		int theValue = 0;
+		try
+		{
+		   System.out.println("Block entered");
+		   if (theValue > 10) {
+			      throw new Exception ("Value exceeded");
+		   }
+		   System.out.println("Leaving try block");
+		} 
+		catch (Exception e)
+		{
+		   System.out.println("Exception occurred: "+ e.getMessage());
+		}
+		System.out.println("After catch block");
+	}
+}
